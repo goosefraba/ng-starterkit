@@ -8,5 +8,3 @@ require("angular-translate");
 console.log("test");
 console.log($);
 console.log(_);
-console.log(_);
-console.log(_);
