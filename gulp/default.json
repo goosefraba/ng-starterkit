@@ -1,0 +1,36 @@
+{
+  "build": {
+    "version": "SNAPSHOT",
+    "src": "./src",
+    "build": "./build",
+    "bin": "./bin",
+    "dir": {
+      "less": "less",
+      "css": "css"
+    },
+    "pattern": {
+      "allSubDirs": "/**",
+      "ts": "*.ts",
+      "less": "*.less",
+      "js": "*.js",
+      "cfg": "*.json",
+      "devSuffix": "-DEV"
+    },
+    "task": {
+      "less": {
+        "src": []
+      },
+      "static": {
+        "src": []
+      },
+      "inject": {
+        "target": "/views/header.ejs",
+        "viewDir": "/server/views/"
+      },
+      "typescript": {
+        "main": "app.ts",
+        "outputname": "app"
+      }
+    }
+  }
+}
