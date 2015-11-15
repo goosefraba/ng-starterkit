@@ -5,6 +5,8 @@
     "build": "./build",
     "bin": "./bin",
     "dir": {
+      "assets": "assets",
+      "sass": "sass",
       "less": "less",
       "css": "css"
     },
@@ -18,6 +20,9 @@
     },
     "task": {
       "less": {
+        "src": []
+      },
+      "sass": {
         "src": []
       },
       "static": {

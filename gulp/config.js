@@ -10,6 +10,7 @@ nconf
     })
     .file(nconf.get("build").context, {file: './gulp/' + nconf.get("build").context + '.json'})
     .file({file: './gulp/default.json'});
+
 var cfg = nconf.get('build');
 
 console.log("Build config loaded: " + JSON.stringify(cfg));
