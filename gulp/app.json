@@ -1,0 +1,18 @@
+{
+  "build": {
+    "task": {
+      "less": {
+        "src": [
+          "app.less"
+        ]
+      },
+      "static": {
+        "src": [
+          "/**/*.tpl.html",
+          "/**/*.jpg",
+          "/**/*.png"
+        ]
+      }
+    }
+  }
+}
