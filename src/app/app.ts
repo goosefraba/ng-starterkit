@@ -6,5 +6,5 @@ require("angular-ui-router");
 require("angular-translate");
 
 console.log("test");
-console.log($);
-console.log(_);
+console.log("test");
+console.log("test");

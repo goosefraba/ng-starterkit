@@ -38,7 +38,7 @@ gulp.task('less:build', function (callback) {
 });
 
 gulp.task('less:compile', function (callback) {
-    var destDir = path.join(cfg.build, cfg.context, cfg.dir.assets, cfg.dir.css);
+    var destDir = path.join(cfg.bin, cfg.context, cfg.dir.assets, cfg.dir.css);
 
     // Create a stream array
     var src = [];
@@ -92,7 +92,7 @@ gulp.task('sass:build', function (callback) {
 });
 
 gulp.task('sass:compile', function (callback) {
-    var destDir = path.join(cfg.build, cfg.context, cfg.dir.assets, cfg.dir.css);
+    var destDir = path.join(cfg.bin, cfg.context, cfg.dir.assets, cfg.dir.css);
 
     // Create a stream array
     var src = [];
