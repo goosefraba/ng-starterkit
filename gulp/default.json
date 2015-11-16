@@ -17,6 +17,7 @@
       "sass": "*.scss",
       "css": "*.css",
       "js": "*.js",
+      "json": "*.json",
       "cfg": "*.json",
       "html": "*.html",
       "devSuffix": "-DEV"
