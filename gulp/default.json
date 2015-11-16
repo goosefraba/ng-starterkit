@@ -14,8 +14,11 @@
       "allSubDirs": "/**",
       "ts": "*.ts",
       "less": "*.less",
+      "sass": "*.scss",
+      "css": "*.css",
       "js": "*.js",
       "cfg": "*.json",
+      "html": "*.html",
       "devSuffix": "-DEV"
     },
     "task": {
@@ -29,8 +32,7 @@
         "src": []
       },
       "inject": {
-        "target": "/views/header.ejs",
-        "viewDir": "/server/views/"
+        "target": "index.html"
       },
       "typescript": {
         "main": "app.ts",
