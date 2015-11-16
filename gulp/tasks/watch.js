@@ -19,7 +19,8 @@ gulp.task('ui:watch', ['ui:build'], function () {
     // and call any methods on it.
     browserSync.watch([
         path.join(buildContextSearchDir, cfg.pattern.js),
-        path.join(buildContextSearchDir, cfg.pattern.css)
+        path.join(buildContextSearchDir, cfg.pattern.css),
+        path.join(buildContextSearchDir, cfg.pattern.json)
     ]).on('change', browserSync.reload);
     browserSync.watch().on('change', browserSync.reload);
 
@@ -27,6 +28,8 @@ gulp.task('ui:watch', ['ui:build'], function () {
     gulp.watch(path.join(srcContextSearchDir, cfg.pattern.ts), ["webpack:build"]);
     // .html files
     gulp.watch(path.join(srcContextSearchDir, cfg.pattern.html), ['static:watch']);
+    // .json files
+    gulp.watch(path.join(srcContextSearchDir, cfg.pattern.json), ['static:watch']);
     // .less files
     gulp.watch(path.join(srcContextSearchDir, cfg.pattern.less), ['less:build']);
     // .scss files

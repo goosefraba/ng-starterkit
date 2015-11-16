@@ -4,7 +4,6 @@
 require("angular");
 require("angular-ui-router");
 require("angular-translate");
+require("angular-translate-loader-static-files");
 
-console.log("test");
-console.log("test");
-console.log("test");
+
