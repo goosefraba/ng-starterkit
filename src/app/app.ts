@@ -6,6 +6,7 @@ require("angular-ui-router");
 require("angular-translate");
 require("angular-translate-loader-static-files");
 require("restangular");
+require("angular-bootstrap");
 
 require("src/app/components/foo/foo");
 require("src/app/components/bar/bar");
@@ -34,6 +35,7 @@ export class AppCtrl implements app.IBaseController {
 // module dependencies
 const moduleDependencies:Array<string> = [
     "ui.router",
+    "ui.bootstrap",
     "restangular",
     "pascalprecht.translate",
     "ngstk.app.foo",
