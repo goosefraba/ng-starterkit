@@ -8,7 +8,7 @@ require("angular");
  */
 export class BarCtrl implements app.IBaseController {
 
-    public static $inject = [
+    public static $inject:Array<string> = [
         "$scope"
     ];
 
@@ -25,7 +25,7 @@ export class BarCtrl implements app.IBaseController {
  */
 
 // module dependencies
-var moduleDependencies = [
+const moduleDependencies:Array<string> = [
     "pascalprecht.translate"
 ];
 
