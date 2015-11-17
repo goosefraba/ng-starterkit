@@ -25,7 +25,6 @@ export class AppCtrl implements app.IBaseController {
         console.log("AppCtrl loaded");
         this.$scope.vm = this;
     }
-
 }
 
 /**
