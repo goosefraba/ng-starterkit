@@ -4,11 +4,15 @@ var path = require('path');
 var runSequence = require('run-sequence');
 var cfg = require('../config');
 var browserSync = require('browser-sync').create("NgSync");
+var modRewrite = require('connect-modrewrite');
 
 gulp.task('ui:watch', ['ui:build'], function () {
     browserSync.init({
         server: {
-            baseDir: path.join(cfg.build, cfg.context)
+            baseDir: path.join(cfg.build, cfg.context),
+            middleware: modRewrite([
+                '!\\.\\w+$ /index.html [L]'
+            ])
         },
         reloadDebounce: 1000
     });

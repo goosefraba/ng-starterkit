@@ -1,4 +1,31 @@
 {
   "title": "ng-starterkit",
-  "slogan": "Awesome starterkit"
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "bar": {
+    "heading": "You are at the end of bar, fooBar!",
+    "button": "Back to Foo",
+    "content": "Lorem ipsum content"
+  },
+  "foo": {
+    "heading": "Foo Heading",
+    "slogan": "The foo slogan",
+    "button": {
+      "bar": "Go to Bar",
+      "ctrl": "Call Ctrl"
+    },
+    "feature": {
+      "a": {
+        "heading": "Feature A",
+        "content": "This is the description of the awesome Feature A"
+      },
+      "b": {
+        "heading": "Feature B",
+        "content": "This is the description of the awesome Feature B"
+      }
+    }
+  }
 }
