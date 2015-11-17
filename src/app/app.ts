@@ -16,7 +16,7 @@ require("src/app/components/bar/bar");
  */
 export class AppCtrl implements app.IBaseController {
 
-    public static $inject = [
+    public static $inject:Array<string> = [
         "$scope"
     ];
 
@@ -27,13 +27,12 @@ export class AppCtrl implements app.IBaseController {
 
 }
 
-
 /**
  * AngularJS Module Definition
  */
 
 // module dependencies
-var moduleDependencies = [
+const moduleDependencies:Array<string> = [
     "ui.router",
     "restangular",
     "pascalprecht.translate",
@@ -55,7 +54,7 @@ angular.module("ngstk.app", moduleDependencies)
         $locationProvider.html5Mode(true).hashPrefix("!");
 
         // set base url for restangular
-        RestangularProvider.setBaseUrl('/api/v1');
+        RestangularProvider.setBaseUrl("/api/v1");
 
         // state definition
         $stateProvider
@@ -74,8 +73,8 @@ angular.module("ngstk.app", moduleDependencies)
 
         // setup translation
         $translateProvider.useStaticFilesLoader({
-            prefix: '/locale/locale-',
-            suffix: '.json'
+            prefix: "/locale/locale-",
+            suffix: ".json"
         });
 
         $translateProvider.preferredLanguage("en");
