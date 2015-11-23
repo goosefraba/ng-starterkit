@@ -25,6 +25,7 @@
     "expose-loader": "^0.7.0",
     "gulp": "^3.9.0",
     "gulp-inject": "^3.0.0",
+    "gulp-jasmine": "^2.2.1",
     "gulp-less": "^3.0.5",
     "gulp-rename": "^1.2.2",
     "gulp-rimraf": "^0.2.0",

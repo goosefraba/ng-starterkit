@@ -4,7 +4,7 @@
 require("angular");
 
 /**
- * Foo Controller
+ * Bar Controller
  */
 export class BarCtrl implements app.IBaseController {
 
@@ -16,7 +16,6 @@ export class BarCtrl implements app.IBaseController {
         console.log("BarCtrl loaded");
         this.$scope.vm = this;
     }
-
 }
 
 
