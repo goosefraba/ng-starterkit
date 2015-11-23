@@ -3,10 +3,17 @@
 // libraries
 require("angular");
 
+class FooService implements foo.IFooService{
+    public getTheFoo():string{
+        return "here is the foo";
+    }
+}
+
+
 /**
  * Foo Controller
  */
-export class FooCtrl implements app.IBaseController {
+class FooCtrl implements app.IBaseController {
 
     public static $inject:Array<string> = [
         "$scope"
@@ -36,6 +43,7 @@ const moduleDependencies:Array<string> = [
 // module definition
 angular.module("ngstk.app.foo", moduleDependencies)
     .controller("ngstk_fooCtrl", FooCtrl)
+    .service("ngstk_fooService", FooService)
     .config(($stateProvider:angular.ui.IStateProvider) => {
         // state definition
         $stateProvider
