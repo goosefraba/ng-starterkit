@@ -2,9 +2,10 @@ describe('Foo Service', function(){
     var fooService;
 
     beforeEach(function(){
+        module('ui.router');
         module("ngstk.app.foo");
         inject(function($injector){
-            fooService = $injector.get("ngstk.app.foo");
+            fooService = $injector.get("ngstk_fooService");
         });
     });
 

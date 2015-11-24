@@ -4,3 +4,4 @@
 /// <reference path="angular-ui-router/angular-ui-router.d.ts" />
 /// <reference path="restangular/restangular.d.ts" />
 /// <reference path="angular-translate/angular-translate.d.ts" />
+/// <reference path="node/node.d.ts" />

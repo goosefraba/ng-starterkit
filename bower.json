@@ -16,6 +16,8 @@
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
     "restangular": "~1.5.1",
-    "angular-bootstrap": "~0.14.3"
+    "angular-bootstrap": "~0.14.3",
+    "angular-translate-loader-static-files": "~2.8.1",
+    "angular-mocks": "~1.4.8"
   }
 }

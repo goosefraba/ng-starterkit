@@ -2,16 +2,16 @@ var gulp = require('gulp');
 var path = require('path');
 var cfg = require('../config');
 var _ = require('lodash');
-var jasmine = require('gulp-jasmine');
+var karma = require('gulp-karma');
 
 gulp.task('test:build', function () {
-    return gulp.src(path.join(cfg.build, cfg.context, cfg.pattern.allSubDirs, "*.spec.js"))
-        .pipe(jasmine());
+    return gulp.src('./foo')
+        .pipe(karma({
+            configFile: 'gulp/util/karma.conf.dev.js',
+            action: 'run'
+        }))
+        .on('error', function(err) {
+            console.log(err);
+            this.emit('end'); //instead of erroring the stream, end it
+        });
 });
-
-
-gulp.task('test:compile', function () {
-    return gulp.src(path.join(cfg.bin, cfg.context, cfg.pattern.allSubDirs, "*.spec.js"))
-        .pipe(jasmine());
-});
-

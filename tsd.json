@@ -22,6 +22,9 @@
     },
     "angular-translate/angular-translate.d.ts": {
       "commit": "0a6894d9ecad95abc88b00109f6f81c80b109e81"
+    },
+    "node/node.d.ts": {
+      "commit": "b2d17b5dad042e293e77d09f2a30d281325cb606"
     }
   }
 }
