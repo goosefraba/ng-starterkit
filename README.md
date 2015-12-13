@@ -4,25 +4,25 @@ Besides the support for multiple apps, this starterkit includes a complete conte
 
 ## Getting Started
 * First of all we install the required dependencies from npm and bower:
-    ```
+```
     npm install
     bower install
-    ```
+```
 * During the development we usually want to include sourcemaps and console output in our build. This development build can be generated using the following command:
-    ```
+```
     gulp ui:build
-    ```
+```
   The resulting build can be found under `build`.
 * For a production build the source is minified, sourcemaps and console output are removed. To start the production build use:
-    ```
+```
     gulp ui:compile
-    ```
+```
   The resulting build can be found under `bin`.
 * An extension to the development build is the *watch mode* - this corresponds to continuous dev builds which are triggered by changes in the source files.
   In addition, the watch mode provides a basic web server (browser-sync) that automatically refreshes the browser when the changes are compiled.
-    ```
+```
     gulp ui:watch
-    ```
+```
 
 ## Project Structure
 The following visualization of the project structure highlights the most important configuration and structure principles of this kit:
