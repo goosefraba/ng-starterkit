@@ -6,7 +6,7 @@
     "bin": "./bin",
     "dir": {
       "assets": "assets",
-      "sass": "sass",
+      "scss": "scss",
       "less": "less",
       "css": "css"
     },
@@ -14,7 +14,7 @@
       "allSubDirs": "/**",
       "ts": "*.ts",
       "less": "*.less",
-      "sass": "*.scss",
+      "scss": "*.scss",
       "css": "*.css",
       "js": "*.js",
       "json": "*.json",
@@ -26,7 +26,7 @@
       "less": {
         "src": []
       },
-      "sass": {
+      "scss": {
         "src": []
       },
       "static": {

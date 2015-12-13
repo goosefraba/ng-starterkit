@@ -6,6 +6,11 @@
           "style.less"
         ]
       },
+      "scss": {
+        "src": [
+          "other.style.scss"
+        ]
+      },
       "static": {
         "src": [
           "/**/*.spec.js",

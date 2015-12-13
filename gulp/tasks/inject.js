@@ -14,7 +14,7 @@ gulp.task('inject:build', function () {
 
 
     var sources = gulp.src([
-        path.join(".", cfg.build, cfg.context, cfg.pattern.allSubDirs, cfg.pattern.js),
+        path.join(".", cfg.build, cfg.context, cfg.pattern.js),
         path.join(".", cfg.build, cfg.context, cfg.pattern.allSubDirs, cfg.pattern.css)
     ], {read: false});
 
@@ -34,7 +34,7 @@ gulp.task('inject:compile', function () {
 
 
     var sources = gulp.src([
-        path.join(".", cfg.bin, cfg.context, cfg.pattern.allSubDirs, cfg.pattern.js),
+        path.join(".", cfg.bin, cfg.context, cfg.pattern.js),
         path.join(".", cfg.bin, cfg.context, cfg.pattern.allSubDirs, cfg.pattern.css)
     ], {read: false});
 

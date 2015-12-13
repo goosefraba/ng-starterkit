@@ -11,7 +11,7 @@ gulp.task('ui:build', function () {
         [
             'static:copy:build',
             'less:build',
-            'sass:build',
+            'scss:build',
             'webpack:build'
         ],
         'inject:build',
@@ -26,14 +26,12 @@ gulp.task('ui:build', function () {
 
 gulp.task('ui:compile', function () {
     var deferred = Q.defer();
-    return deferred.promise;
-
     runSequence(
         'clean:compile',
         [
             'static:copy:compile',
             'less:compile',
-            'sass:compile',
+            'scss:compile',
             'webpack:compile'
         ],
         'inject:compile',
@@ -41,5 +39,6 @@ gulp.task('ui:compile', function () {
         function () {
             deferred.resolve();
         });
+    return deferred.promise;
 });
 

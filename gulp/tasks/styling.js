@@ -66,13 +66,13 @@ gulp.task('less:compile', function (callback) {
 });
 
 
-gulp.task('sass:build', function (callback) {
+gulp.task('scss:build', function (callback) {
     var destDir = path.join(cfg.build, cfg.context, cfg.dir.assets, cfg.dir.css);
 
     // Create a stream array
     var src = [];
-    _(cfg.task.sass.src).forEach(function (elem) {
-        src.push(path.join(cfg.src, cfg.context, cfg.dir.assets, cfg.dir.sass, elem));
+    _(cfg.task.scss.src).forEach(function (elem) {
+        src.push(path.join(cfg.src, cfg.context, cfg.dir.assets, cfg.dir.scss, elem));
     }).value();
 
     if (!_.isEmpty(src)) {
@@ -91,13 +91,13 @@ gulp.task('sass:build', function (callback) {
     }
 });
 
-gulp.task('sass:compile', function (callback) {
+gulp.task('scss:compile', function (callback) {
     var destDir = path.join(cfg.bin, cfg.context, cfg.dir.assets, cfg.dir.css);
 
     // Create a stream array
     var src = [];
-    _(cfg.task.sass.src).forEach(function (elem) {
-        src.push(path.join(cfg.src, cfg.context, cfg.dir.assets, cfg.dir.sass, elem));
+    _(cfg.task.scss.src).forEach(function (elem) {
+        src.push(path.join(cfg.src, cfg.context, cfg.dir.assets, cfg.dir.scss, elem));
     }).value();
 
     if (!_.isEmpty(src)) {

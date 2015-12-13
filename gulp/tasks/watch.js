@@ -35,11 +35,37 @@ gulp.task('ui:watch', ['ui:build'], function () {
     // .json files
     gulp.watch(path.join(srcContextSearchDir, cfg.pattern.json), ['static:watch']);
     // .less files
-    gulp.watch(path.join(srcContextSearchDir, cfg.pattern.less), ['less:build']);
+    gulp.watch(path.join(srcContextSearchDir, cfg.pattern.less), ['less:watch']);
     // .scss files
-    gulp.watch(path.join(srcContextSearchDir, cfg.pattern.less), ['sass:build']);
+    gulp.watch(path.join(srcContextSearchDir, cfg.pattern.scss), ['scss:watch']);
 });
 
+
+gulp.task('less:watch', function () {
+    var deferred = Q.defer();
+    runSequence(
+        'less:build',
+        'inject:build',
+        function () {
+            browserSync.reload();
+            deferred.resolve();
+        });
+
+    return deferred.promise;
+});
+
+gulp.task('scss:watch', function () {
+    var deferred = Q.defer();
+    runSequence(
+        'scss:build',
+        'inject:build',
+        function () {
+            browserSync.reload();
+            deferred.resolve();
+        });
+
+    return deferred.promise;
+});
 
 gulp.task('static:watch', function () {
     var deferred = Q.defer();
